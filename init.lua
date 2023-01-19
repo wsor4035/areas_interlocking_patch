@@ -16,7 +16,8 @@ for _, nodename in pairs(rclick_nodes) do
 
         minetest.override_item(nodename, {
             on_rightclick = function(pos, node, clicker, ...)
-                if minetest.is_protected(pos, clicker:get_player_name()) then
+                if minetest.is_protected(pos, clicker:get_player_name())
+                and not minetest.check_player_privs(clicker, "train_admin") then
                     minetest.chat_send_player(clicker:get_player_name(), "Insufficient privlieges to use in this area!")
                     return
                 else
