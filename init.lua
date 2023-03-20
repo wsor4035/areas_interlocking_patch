@@ -8,9 +8,9 @@ local rclick_nodes = {
     "advtrains:signal_wall_r_on",
     "advtrains:signal_wall_l_off",
     "advtrains:signal_wall_l_on",
-    "advtrains_luaautomation:dtrack_st_45",
+    --[[ "advtrains_luaautomation:dtrack_st_45",
     "advtrains_luaautomation:dtrack_st_30",
-    "advtrains_luaautomation:dtrack_st",
+    "advtrains_luaautomation:dtrack_st", ]]
 }
 
 for _, nodename in pairs(rclick_nodes) do
